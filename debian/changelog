@@ -1,0 +1,5 @@
+gputop (1.3.0+git20230427.0040dfe-toradex1) bookworm; urgency=medium
+
+  * Initial release
+
+ -- Leonardo Held <leonardo.held@toradex.com>  Mon, 15 Jan 2024 09:34:13 -0300
