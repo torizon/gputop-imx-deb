@@ -1,5 +1,7 @@
-on: push
-
+on:
+  push:
+  schedule:
+      - cron: '0 0 * * 0'
 jobs:
   build-debs:
     runs-on: ubuntu-latest
@@ -13,6 +15,7 @@ jobs:
           host-arch: arm64
           apt-opts: --install-recommends
           extra-build-deps: ca-certificates
+          docker-image: debian:testing-slim
           apt-sources: |
             Types: deb
             URIs: https://feeds.toradex.com/debian
